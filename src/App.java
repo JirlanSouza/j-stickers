@@ -3,7 +3,7 @@ import java.net.URL;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        var apiUrlAndContentExtractor = ApiUrlAndContentExtractor.get(ApiProvider.NASA);
+        var apiUrlAndContentExtractor = ApiUrlAndContentExtractor.get(ApiProvider.IMDB);
 
         var client = new ClientHttp();
         var responseDataJson = client.getData(apiUrlAndContentExtractor.url());
